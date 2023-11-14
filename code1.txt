@@ -1,12 +1,9 @@
 
-
-#There is no error in this code
-
 def reverse_string(s):
-    reversed = ""
-    for i in range(len(s) - 1, -1, -1):
-        reversed += s[i]
-    return reversed
+    reversed_str = ""
+    for i in range(len(s), 0, -1):
+        reversed_str += s[i - 1]
+    return reversed_str
 
 def main():
     input_string = "Hello, world!"
@@ -15,4 +12,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+Error Explanation-
+Your code looks mostly correct, but there's a small mistake in the reverse_string function. Instead of starting the loop from len(s) - 1, you should start it from len(s), and the range should go up to -1 (exclusive) to properly reverse the string
+
+
+
                                         
